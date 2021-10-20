@@ -41,8 +41,10 @@ link = [
 external-modules = ["gtk", "g"]
 ```
 
-The project can be built and run with the command:
+The project can be built and run with that command (tested under Ubuntu):
 
 ```bash
 $ fpm run --flag '$(pkg-config --cflags gtk-4-fortran) -Xlinker -R/usr/local/lib'
 ```
+
+In Fedora, use the path `-R/usr/local/lib64` instead.
