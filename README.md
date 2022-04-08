@@ -1,9 +1,9 @@
-# A fpm version of the gtkzero example in gtk-fortran
+# Using gtk-fortran as a fpm dependency
 
-We demonstrate how the Fortran Package Manager *fpm* can be used to build and run a gtk-fortran program. The original version is that GTK 4 example, which just opens an empty GTK window :
+We demonstrate how the Fortran Package Manager *fpm* can be used to build and run a gtk-fortran program, using gtk-fortran as a fpm dependency. The original version is that GTK 4 example, which just opens an empty GTK window :
 https://github.com/vmagnin/gtk-fortran/blob/gtk4/examples/gtkzero_gapp.f90
 
-`gtk-4-fortran` is supposed to be installed on your machine (`sudo make install` on a Unix-like system).
+GTK 4 is supposed to be installed on your machine.	
 
 The `gtkzero_gapp.f90` was divided in two parts. This is the tree of the *fpm* project:
 
@@ -23,6 +23,9 @@ The `gtkzero_gapp.f90` was divided in two parts. This is the tree of the *fpm* p
 The `fpm.toml` manifest must contain:
 
 ```toml
+[dependencies]
+gtk-4-fortran = { git = "https://github.com/vmagnin/gtk-fortran.git", branch = "experimental_fpm" }
+
 [build]
 link = [
   "gtk-4",
@@ -38,13 +41,10 @@ link = [
   "gobject-2.0",
   "glib-2.0",
   "gtk-4-fortran" ]
-external-modules = ["gtk", "g"]
 ```
 
-The project can be built and run with that command (tested under Ubuntu):
+The project can be built and run with that command:
 
 ```bash
-$ fpm run --flag '$(pkg-config --cflags gtk-4-fortran) -Xlinker -R/usr/local/lib'
+$ fpm run
 ```
-
-In Fedora, use the path `-R/usr/local/lib64` instead.
