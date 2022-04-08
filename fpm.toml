@@ -1,9 +1,15 @@
 name = "gtkzero_fpm"
-version = "4.0.0"
-license = "GPL v3"
+description = "A demo using gtk-fortran as a fpm dependency"
+version = "4.2.0"
+license = "MIT"
 author = "Vincent Magnin"
 maintainer = "Vincent Magnin"
 copyright = "Copyright 2021, Vincent Magnin"
+homepage = "https://github.com/vmagnin/gtkzero_fpm"
+keywords = ["gtk-fortran"]
+
+[dependencies]
+gtk-4-fortran = { git = "https://github.com/vmagnin/gtk-fortran.git", branch = "experimental_fpm" }
 
 [build]
 link = [
@@ -20,10 +26,3 @@ link = [
   "gobject-2.0",
   "glib-2.0",
   "gtk-4-fortran" ]
-external-modules = ["gtk", "g"]
-auto-executables = true
-auto-tests = true
-auto-examples = true
-
-[install]
-library = false
