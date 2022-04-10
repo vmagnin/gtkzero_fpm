@@ -9,7 +9,7 @@ homepage = "https://github.com/vmagnin/gtkzero_fpm"
 keywords = ["gtk-fortran"]
 
 [dependencies]
-gtk-4-fortran = { git = "https://github.com/vmagnin/gtk-fortran.git", branch = "experimental_fpm" }
+gtk-fortran = { git = "https://github.com/vmagnin/gtk-fortran.git", branch = "experimental_fpm" }
 
 [build]
 link = [
