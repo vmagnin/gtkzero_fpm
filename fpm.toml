@@ -1,9 +1,9 @@
 name = "gtkzero_fpm"
-description = "A demo using gtk-fortran as a fpm dependency"
+description = "A demo using gtk-fortran as a fpm dependency: an empty GTK window"
 version = "4.2.0"
 license = "MIT"
 author = "Vincent Magnin"
-maintainer = "Vincent Magnin"
+maintainer = "https://github.com/vmagnin/gtkzero_fpm/issues"
 copyright = "Copyright 2021, Vincent Magnin"
 homepage = "https://github.com/vmagnin/gtkzero_fpm"
 keywords = ["gtk-fortran"]
@@ -26,4 +26,5 @@ link = [
 #  "cairo",
 #  "graphene-1.0",
 #  "harfbuzz",
-#  "vulkan"
+#  "vulkan"...
+
