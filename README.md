@@ -1,6 +1,6 @@
 # Using gtk-fortran as a fpm dependency
 
-We demonstrate how the Fortran Package Manager [fpm](https://fpm.fortran-lang.org/) can be used to build and run a gtk-fortran program, using gtk-fortran as a fpm dependency. The present `gtkzero_fpm` example is based on the GTK 4 [`gtkzeo_gapp` example](https://github.com/vmagnin/gtk-fortran/blob/gtk4/examples/gtkzero_gapp.f90) and just opens an empty GTK window.
+We demonstrate how the Fortran Package Manager [fpm](https://fpm.fortran-lang.org/) can be used to build and run a gtk-fortran program, using gtk-fortran as a fpm dependency. The present `gtkzero_fpm` example is based on the GTK 4 [`gtkzero_gapp` example](https://github.com/vmagnin/gtk-fortran/blob/gtk4/examples/gtkzero_gapp.f90) and just opens an empty GTK window.
 
 ## Requirements
 
@@ -55,7 +55,7 @@ $ git clone git@github.com:vmagnin/gtkzero_fpm.git
 $ cd gtkzero_fpm
 $ fpm run
 ```
-You should see on screen an empy GTK window with an "hello world" title.
+You should see on screen an empty GTK window with an "hello world" title.
 
 ## License
 
