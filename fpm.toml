@@ -25,6 +25,5 @@ link = [
 #  "cairo-gobject",
 #  "cairo",
 #  "graphene-1.0",
-#  "harfbuzz",
-#  "vulkan"...
+#  "harfbuzz"
 
