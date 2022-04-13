@@ -1,4 +1,6 @@
 !*************************************
+! MIT license
+! Vincent MAGNIN, 2020-02-18
 ! User defined event handlers go here
 !*************************************
 module handlers
