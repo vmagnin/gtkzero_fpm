@@ -32,7 +32,6 @@ link = [
   "gdk_pixbuf-2.0",
   "cairo-gobject",
   "cairo",
-  "vulkan",
   "graphene-1.0",
   "gio-2.0",
   "gobject-2.0",
