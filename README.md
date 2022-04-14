@@ -25,25 +25,11 @@ The original `gtkzero_gapp.f90` has been divided in two files `main.f90` and `ha
     └── check.f90
 ```
 
-The `fpm.toml` manifest must contain:
+The `fpm.toml` manifest must contain a dependencies section with gtk-fortran:
 
 ```toml
 [dependencies]
 gtk-fortran = { git = "https://github.com/vmagnin/gtk-fortran.git", branch = "experimental_fpm" }
-
-[build]
-link = [
-  "gtk-4",
-  "pangocairo-1.0",
-  "pango-1.0",
-  "harfbuzz",
-  "gdk_pixbuf-2.0",
-  "cairo-gobject",
-  "cairo",
-  "graphene-1.0",
-  "gio-2.0",
-  "gobject-2.0",
-  "glib-2.0"]
 ```
 
 ## Building and running
