@@ -29,7 +29,7 @@ The `fpm.toml` manifest must contain a dependencies section with gtk-fortran:
 
 ```toml
 [dependencies]
-gtk-fortran = { git = "https://github.com/vmagnin/gtk-fortran.git", branch = "experimental_fpm" }
+gtk-fortran = { git = "https://github.com/vmagnin/gtk-fortran.git", branch = "gtk4" }
 ```
 
 ## Building and running
