@@ -1,29 +1,15 @@
 name = "gtkzero_fpm"
-version = "4.0.0"
-license = "GPL v3"
+description = "A demo using gtk-fortran as a fpm dependency: an empty GTK window"
+version = "4.1.1"
+license = "MIT"
 author = "Vincent Magnin"
-maintainer = "Vincent Magnin"
+maintainer = "https://github.com/vmagnin/gtkzero_fpm/issues"
 copyright = "Copyright 2021, Vincent Magnin"
+homepage = "https://github.com/vmagnin/gtkzero_fpm"
+keywords = ["gtk-fortran"]
 
-[build]
-link = [
-  "gtk-4",
-  "pangocairo-1.0",
-  "pango-1.0",
-  "harfbuzz",
-  "gdk_pixbuf-2.0",
-  "cairo-gobject",
-  "cairo",
-  "vulkan",
-  "graphene-1.0",
-  "gio-2.0",
-  "gobject-2.0",
-  "glib-2.0",
-  "gtk-4-fortran" ]
-external-modules = ["gtk", "g"]
-auto-executables = true
-auto-tests = true
-auto-examples = true
+[dependencies]
+gtk-fortran = { git = "https://github.com/vmagnin/gtk-fortran.git", branch = "gtk4" }
 
-[install]
-library = false
+# The list of the GTK libraries needed by the linker is declared
+# in the fpm.toml file of the gtk-fortran project.
