@@ -43,7 +43,11 @@ external-modules = ["gtk", "g"]
 The project can be built and run with that command (tested under Ubuntu):
 
 ```bash
-$ fpm run --flag '$(pkg-config --cflags gtk-4-fortran) -Xlinker -R/usr/local/lib'
+$ fpm run --flag '$(pkg-config --cflags gtk-4-fortran)'
 ```
 
-In Fedora, use the path `-R/usr/local/lib64` instead.
+In Fedora, you may need to type:
+```bash
+$ export PKG_CONFIG_PATH=/usr/local/lib64/pkgconfig/
+```
+
